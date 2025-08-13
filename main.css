@@ -1,0 +1,11 @@
+header .container{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: rgb(156, 54, 20);
+    height: 100px;
+}
+header .container > div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
