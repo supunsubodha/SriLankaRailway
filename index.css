@@ -1,0 +1,37 @@
+.slideshow-container > img{
+    margin: auto;
+    max-width: 100%;
+    padding-top: 10px;
+    padding: 10px 10px 1px 10px;
+    heigth:200px;
+}
+.service-menu{
+    width:100%;
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    margin: auto;
+}
+.service-menu > div{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid black;
+    padding: 15px 10px 15px 10px;
+    border-radius: 2px;
+}
+.service-menu > div > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.service-menu > div:hover{
+    background-color: rgb(161, 82, 51);
+    color: whitesmoke;
+    a{
+        color: whitesmoke;
+    }
+}
+.service-menu > div > a:hover{
+    color: whitesmoke;
+}

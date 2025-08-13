@@ -3,9 +3,57 @@ header .container{
     grid-template-columns: 75% 25%;
     background-color: rgb(156, 54, 20);
     height: 100px;
+    max-width: 100%;
 }
 header .container > div{
     display: flex;
     align-items: center;
     height: 100%;
+}
+@media(max-width:768px){
+    header #bannerimg{
+        display: none;
+    }
+    nav ul li{
+        margin: 5px;
+    }
+}
+@media(orientation: portrait){
+    header #bannerimg{
+        display: none;
+    }
+    nav ul li{
+        border: 2px solid rgb(212, 144, 72);
+    }
+}
+nav > .container{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: rgb(156, 54, 20);
+    margin-top: 10px;
+}
+nav > .container > ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+}
+nav > .container > ul > li > a{
+    text-decoration: none;
+    color:rgb(212, 144, 72);
+    font-weight: bold;
+    margin-left: 3px;
+    font-size: larger;
+}
+nav > .container > ul > li{
+    margin-right: 20px;
+    padding-left: 5px;
+}
+nav > .container > ul > li >a:hover{
+    color: rgb(255, 255, 255);
+}
+#login-register{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }

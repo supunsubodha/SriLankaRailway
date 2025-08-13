@@ -3,9 +3,10 @@
     <head>
         <title>My Web Page</title>
         <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
         <meta charset="UTF-8">
     </head>
-    <body>
+    <body width ="100%">
         <header>
             <div class="container">
                 <div>
@@ -14,16 +15,43 @@
                     </a>
                     <h1 style="padding-left:40px ; color:rgb(212, 144, 72);">Sri Lanka Railway</h1>
                 </div>
-                <img src="/images/bannerimg.jpg" alt="Banner Image" style="height:100px; width:auto; margin-right: 0; filter: blur(1px);">
+                <img src="/images/bannerimg.jpg" alt="Banner Image" style="height:100px; width:auto; margin-right: 0; filter: blur(1px); "id="bannerimg">
                 <div>
                     
                 </div>
             </div>
         </header>
+        <!--Navigation-->
         <nav>
             <div class="container">
-                
+                <ul>
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="about.html">About Us </a></li>
+                    <li><a href="services.html">Services </a></li>
+                    <li><a href="notice.html">Notices </a></li>
+                    <li><a href="downloads.html">Downloads </a></li>
+                    <li><a href="gallery.html">Gallery </a></li>
+                    <li><a href="faq.html">FAQ </a></li>
+                    <li><a href="index.html">Contact Us </a></li>
+                </ul>
+                <ul id="login-register">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
             </div>
         </nav>
+        <!--Slideshow-->
+        <div class="slideshow-container">
+            <img src="images/bannerimg.jpg" alt="Slideshow Image">
+        </div>
+        </br>
+
+        <!--ServiceMenu-->
+        <div class="service-menu">
+            <div><a href="train-schedule.html">Train Schedule</a></div>
+            <div><a href="ticket-booking.html">Ticket Booking</a></div>
+            <div><a href="parcel.html">Goods & Parcels</a></div>
+            <div><a href="complains.html">Complains</a></div>
+        </div>
     </body>
 </html>
