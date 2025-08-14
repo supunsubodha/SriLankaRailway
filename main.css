@@ -17,6 +17,18 @@ header .container > div{
     nav ul li{
         margin: 5px;
     }
+    .footer-contact{
+        display: none;
+    }
+    .footer-logo{
+        display: none;
+    }
+    footer h1{
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        display: flex;
+    }
 }
 @media(orientation: portrait){
     header #bannerimg{
@@ -25,6 +37,19 @@ header .container > div{
     nav ul li{
         border: 2px solid rgb(212, 144, 72);
     }
+    .footer-contact{
+        display: none;
+    }
+    .footer-logo{
+        display: none;
+    }
+    footer h1{
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        display: flex;
+    }
+
 }
 nav > .container{
     display: grid;
@@ -56,4 +81,20 @@ nav > .container > ul > li >a:hover{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    background-color: rgb(156, 54, 20);
+    color: rgb(212, 144, 72);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    position:relative;
+    align-items: center;
+}
+
+.body{
+    width:100%;
+    padding: 0px 20px;
 }

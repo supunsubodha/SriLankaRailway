@@ -4,9 +4,10 @@
         <title>My Web Page</title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" type="text/css" href="index.css">
-        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body width ="100%">
+    <div class="body">
+    <body>
         <header>
             <div class="container">
                 <div>
@@ -53,5 +54,68 @@
             <div><a href="parcel.html">Goods & Parcels</a></div>
             <div><a href="complains.html">Complains</a></div>
         </div>
+
+        <!--Login and notice board-->
+        <div class="login-notice">
+            <div class="login">
+                <form target="login.html" method="post" style="margin: 20px; color:rgb(156, 54, 20);">
+                    <fieldset>
+                        <legend style="font-size: xx-large;">Login</legend>
+                        <center>
+                            <label for="email" style="font-size: xx-large; text-align: left; display: block;">Email:</label></br>
+                            <input type="email" name="email" placeholder="Email" style="width: 70%; height: 30px; border-radius: 8px;"></br></br>
+                            <label for="password" style="font-size: xx-large; text-align: left; display: block;">Password:</label></br>
+                            <input type="password" name="password" placeholder="password" style="width: 70%; height: 30px; border-radius: 8px;">
+                            <br><br>
+                            <input type="submit" value="Login" style="width: 50%; height: 30px; border-radius: 8px; background-color: #4c9baf; color: white; font-size: large;">
+                        </center>
+                        <h4>Still don't have an account?</h4>
+                        <center>
+                        <a href="register.html" style="text-decoration: none; color: white; background-color: #4c9baf; font-weight: bold; display: block; width: 50%; text-align: center; height: 30px; border-radius: 8px; border: 1px black;">Create Accoount</a>
+                        </center>
+                    </fieldset>
+                </form>
+
+
+            </div>
+            <div class="notice">
+                <h1 style="text-align: center; color: rgb(156, 54, 20); margin-top: 40px;">Notice board</h1>
+                <p style="text-align: justify; margin:2px 20px 15px 20px; padding: 10px;border-radius: 8px; color: rgb(156, 54, 20);font-size:x-large; line-height: 1.5;">
+                    Sri Lanka Railways invites applications for Assistant Station Master posts. Apply by 20th August 2025 via careers@railway.gov.lk or post to HR Division, Maradana. G.C.E. A/L and age 18–35 required. Only shortlisted candidates will be notified.
+                </p>
+            </div>
+        </div>
+        <div class="map-video">
+            <div>
+                <img src="images/railwaymap.jpg" alt="Sri Lanka Railway Map">
+            </div>
+
+            <div>
+                <iframe src="https://www.youtube.com/embed/W3TEbs_GVPc" title="Amazing view from Class S14 DMU | Sri Lanka Railway" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                Video credit: <a href="https://youtu.be/W3TEbs_GVPc" target="_blank">RDMNS Railway Network - Sri Lanka</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <footer>
+            <div class="footer">
+                <div class="footer-logo">
+                    <img src="images/govlog.webp" alt="Government Logo" style="height: 100px; width: 30%;padding: 5px 10px 5px 10px;  ">
+
+                </div>
+                <div>
+                    <center><h1>Sri Lanka Railway</h1></center>
+                </div>
+                <div class="footer-contact">
+                    <p style="text-align: left;">
+                        Sri Lanka Railways Headquarters,<br> Olcott Mawatha,<br> Colombo 10,<br> Sri Lanka<br>
+                        <strong>Telephone:</strong> +94 11 4600 111<br>
+                        <strong>Fax:</strong> +94 11 2446490<br>
+
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
+    </div>
 </html>
