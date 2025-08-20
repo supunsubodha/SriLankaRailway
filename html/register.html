@@ -3,7 +3,7 @@
     <head>
         <title>My Web Page</title>
         <link rel="stylesheet" type="text/css" href="../main.css">
-        <link rel="stylesheet" type="text/css" href="../css/login.css">
+        <link rel="stylesheet" type="text/css" href="../css/register.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -34,30 +34,48 @@
                     <li><a href="../index.html">Contact Us </a></li>
                 </ul>
                 <ul id="login-register">
-                    <li><a href="../html/login.html">Login</a></li>
-                    <li><a href="../html/register.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
                 </ul>
             </div>
         </nav>
-        <!--Login Form-->
-        <form action="../php/login.php" method="post">
-            <fieldset>
-                <legend>Login</legend>
-                <center>
-                <!-- <label for="username">Username:</label><br> -->
-                <input type="text" id="username" name="username" placeholder="Username" required><br>
 
-                <!-- <label for="password">Password:</label><br> -->
-                <input type="password" id="password" name="password" placeholder="Password"><br><br>
-                <input type="submit" value="Login" style="width: 50%; height: 30px; border-radius: 8px; background-color: #4c9baf; color: white; font-size: large; margin:auto;">
-                </center>
-                <!-- <input type="submit" value="Login" ><br> -->
-                <!-- <input type="reset" value="Reset" style="margin-left: 80px;"> -->
-                 <h4>Still don't have an account?</h4>
-                 <a href="register.html" style="text-decoration: none; color: white; background-color: #4c9baf; font-weight: bold; display: block; width: 50%; text-align: center; height: 30px; border-radius: 8px; border: 1px black; margin: auto;">Create Accoount</a>
+        <!--Register form-->
+        <form action="../php/register.php" method="post">
+            <fieldset>
+                <legend>Register</legend>
+                <fieldset>
+                    <legend>Login details</legend>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" placeholder="Username" required><br>
+
+                    <label for password>Password:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Password" required><br>
+                </fieldset>
+            
+            <fieldset>
+                <Legend>Personal Details</Legend>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Full name" required><br>
+
+                <label for="nic">NIC:</label><br>
+                <input type="text" id="nic" name="nic" placeholder="NIC" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address" placeholder="Address" required><br>
+            </fieldset>
+            <center>
+            <input type="submit" value="Register" style="width: 50%; height: 50px; border-radius: 8px; background-color: #4c9baf; color: white; font-size: large; margin:10px auto 10px auto;">
+            </center>
+            <h4 style="font-size:25px ;">Already have an account?</h4>
+            <center>
+            <a href="login.html" style="background-color: #4c9baf; height:38px; width:50%; display: block; font-size: xx-large; text-decoration: none; color: aliceblue; border: black solid 2px; border-radius: 8px;">Login</a>
+            </center>
             </fieldset>
         </form>
-
         <!--Footer-->
         <footer>
             <div class="footer">

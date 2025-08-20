@@ -1,11 +1,12 @@
 
 form{
-    max-width: 40%;
-    margin:125px auto 125px auto ;
+    max-width: 90;
+    margin:10% ;
 }
 fieldset{
     border: 5px solid rgb(242, 176, 154);
     border-radius: 10px;
+    margin: 5%;
 }
 legend{
     font-size: 30px;
@@ -13,8 +14,10 @@ legend{
 }
 input{
     font-size: 30px;
-    text-align: center;
     border-radius: 10px;
     margin: 20px;
-    display: block;
+}
+label{
+    font-size: 30px;
+    margin: 20px;
 }
