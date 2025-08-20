@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page</title>
+        <link rel="stylesheet" type="text/css" href="../main.css">
+        <link rel="stylesheet" type="text/css" href="../css/login.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div>
+                    <a href="../index.html">
+                    <img src="../images/logo.png" alt="Sri Lanka Railway Logo" id="logo" style="height:100px; width:auto; padding-left: 25px;">
+                    </a>
+                    <h1 style="padding-left:40px ; color:rgb(212, 144, 72);">Sri Lanka Railway</h1>
+                </div>
+                <div>
+                    <img src="../images/bannerimg.jpg" alt="Banner Image" style="height:100px; width:auto; margin-right: 0;" id="bannerimg">
+                </div>
+            </div>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="../index.html">Home </a></li>
+                    <li><a href="../about.html">About Us </a></li>
+                    <li><a href="../services.html">Services </a></li>
+                    <li><a href="../notice.html">Notices </a></li>
+                    <li><a href="../downloads.html">Downloads </a></li>
+                    <li><a href="../gallery.html">Gallery </a></li>
+                    <li><a href="../faq.html">FAQ </a></li>
+                    <li><a href="../index.html">Contact Us </a></li>
+                </ul>
+                <ul id="login-register">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="../register.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Login Form-->
+        <form action="../php/login.php" method="post">
+            <fieldset>
+                <legend>Login</legend>
+                <center>
+                <!-- <label for="username">Username:</label><br> -->
+                <input type="text" id="username" name="username" placeholder="Username" required><br>
+
+                <!-- <label for="password">Password:</label><br> -->
+                <input type="password" id="password" name="password" placeholder="Password"><br><br>
+                <input type="submit" value="Login" style="width: 50%; height: 30px; border-radius: 8px; background-color: #4c9baf; color: white; font-size: large; margin:auto;">
+                </center>
+                <!-- <input type="submit" value="Login" ><br> -->
+                <!-- <input type="reset" value="Reset" style="margin-left: 80px;"> -->
+                 <h4>Still don't have an account?</h4>
+                 <a href="register.html" style="text-decoration: none; color: white; background-color: #4c9baf; font-weight: bold; display: block; width: 50%; text-align: center; height: 30px; border-radius: 8px; border: 1px black; margin: auto;">Create Accoount</a>
+            </fieldset>
+        </form>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer">
+                <div class="footer-logo">
+                    <img src="../images/govlog.webp" alt="Government Logo" style="height: 100px; width: 30%; padding: 5px 10px 5px 10px;">
+
+                </div>
+                <div>
+                    <h1 style="margin: auto;">Sri Lanka Railway</h1>
+                </div>
+                <div class="footer-contact">
+                    <p style="text-align: left;">
+                        Sri Lanka Railways Headquarters,<br> Olcott Mawatha,<br> Colombo 10,<br> Sri Lanka<br>
+                        <strong>Telephone:</strong> +94 11 4600 111<br>
+                        <strong>Fax:</strong> +94 11 2446490<br>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

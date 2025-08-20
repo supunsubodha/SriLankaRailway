@@ -10,6 +10,13 @@ header .container > div{
     align-items: center;
     height: 100%;
 }
+header .container > div > #bannerimg{
+    position: absolute;
+    right:2px;
+    width: auto;
+    height: 95%;
+
+}
 @media(max-width:768px){
     header #bannerimg{
         display: none;
@@ -47,6 +54,12 @@ header .container > div{
         margin: auto;
         text-align: center;
         align-items: center;
+        display: flex;
+    }
+    nav > .container > ul{
+        flex-flow: row wrap;
+    }
+    footer{
         display: flex;
     }
 
@@ -97,4 +110,7 @@ nav > .container > ul > li >a:hover{
 .body{
     width:100%;
     padding: 0px 20px;
+}
+body{
+    background-color:beige;
 }

@@ -1,0 +1,19 @@
+
+form{
+    max-width: 40%;
+    margin:125px auto 125px auto ;
+}
+fieldset{
+    border: 5px solid rgb(246, 98, 48);
+    border-radius: 10px;
+}
+legend{
+    font-size: 30px;
+    margin: 20px;
+}
+input{
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+}
